@@ -1,0 +1,122 @@
+/* GENERAL */
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Open Sans Light', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+
+em {
+    font-style: normal;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 640px) {
+    body {
+        display: grid;
+        padding: 0.5em;
+        grid-template-columns: 10vw auto 10vw;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    header {
+        grid-row: 1;
+        grid-column: 1/4;
+    }
+
+    article {
+        grid-row: 2;
+        grid-column: 1/4;
+    }
+
+    footer {
+        grid-row: 3;
+        grid-column: 1/4;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        display: grid;
+        padding: 0.5em;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+header, article, nav, aside, footer {
+    padding: 5px;
+}
+
+/* HEADER */
+.navbar-brand {
+    font-family: 'Averia Sans Libre Light', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+/* FOOTER */ 
+footer {
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer div {
+    margin-left: 1em;
+}
+
+/* CAROUSEL */
+.carousel-control-next-icon {
+    background-image: url(icons/caret-right-fill.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(icons/caret-left-fill.svg);
+}
+
+.carousel-indicators li {
+    background-color: rgba(0, 31, 63, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: #001F3F;
+}
+
+/* SOCIAL */
+.social {
+    background-color: #001F3F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid 2px #79C141;
+}
+
+.social div {
+    margin: 1em;
+}
+
+.social svg:hover {
+    fill: rgba(255, 255, 255, 0.7);
+}
