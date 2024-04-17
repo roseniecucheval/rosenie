@@ -1,0 +1,14 @@
+#maven
+#dossier /target pas besoin de le traiter
+target/
+.idea/
+#eclipse
+.classpath
+.project
+.settings/
+#vscode
+.vscode/
+#System files
+.DS_Store
+Thumbs.db
+_MACOSX
