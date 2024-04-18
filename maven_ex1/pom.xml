@@ -15,8 +15,6 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-        <dependencies>
             <!-- Hibernate https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
             <dependency>
                 <groupId>org.hibernate.orm</groupId>
