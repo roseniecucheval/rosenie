@@ -6,5 +6,7 @@ public class Test {
 
     public void m1() {
         System.out.println("1 méthode avec conflit");
+        String test = "yes";
+        System.out.println("1 méthode avec conflit" + yes);
     }
 }
