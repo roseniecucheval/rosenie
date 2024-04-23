@@ -1,8 +1,11 @@
-package spring_config_annotation_xml.beans;
+package spring.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Adresse {
     
-    private String adresse;
+    private String adresse = "Chez Olivier.";
 
     public Adresse() {
 
