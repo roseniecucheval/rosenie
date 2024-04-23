@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import spring.beans.Pianiste;
 import spring.beans.Piano;
@@ -11,7 +12,8 @@ import spring.interfaces.Instrument;
 import spring.interfaces.Musicien;
 
 @Configuration
-@ComponentScan("spring.beans")
+@ComponentScan({"spring.beans", "spring.aspects"})
+@EnableAspectJAutoProxy
 public class SpringConfig {
 
     @Bean

@@ -7,10 +7,6 @@ public class Pianiste implements Musicien {
 
     private Instrument instrument;
 
-    public Pianiste() {
-        
-    }
-
     public Instrument getInstrument() {
         return instrument;
     }
@@ -21,7 +17,7 @@ public class Pianiste implements Musicien {
 
     @Override
     public void perform() {
-        System.out.print("Le pianiste joue : ");
+        System.out.print("Le pianiste joue du ");
         instrument.jouer();
     }
 

@@ -7,13 +7,9 @@ import spring.interfaces.Instrument;
 @Component
 public class Guitare implements Instrument {
 
-    public Guitare() {
-        
-    }
-
     @Override
     public void jouer() {
-        System.out.println("Guitare");
+        System.out.println("guitare.");
     }
 
 }

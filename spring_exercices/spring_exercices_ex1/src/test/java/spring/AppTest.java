@@ -10,6 +10,7 @@ public class AppTest {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
 
         ctx.getBean("pianiste", Musicien.class).perform();
+        System.out.println("--------------------");
         ctx.getBean("guitariste", Musicien.class).perform();
         ctx.close();
     }

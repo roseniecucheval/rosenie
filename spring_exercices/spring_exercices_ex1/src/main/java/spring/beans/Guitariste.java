@@ -14,10 +14,6 @@ public class Guitariste implements Musicien {
     @Qualifier("guitare")
     private Instrument instrument;
 
-    public Guitariste() {
-        
-    }
-
     public Instrument getInstrument() {
         return instrument;
     }
@@ -28,7 +24,7 @@ public class Guitariste implements Musicien {
 
     @Override
     public void perform() {
-        System.out.print("Le guitariste joue : ");
+        System.out.print("Le guitariste joue de la ");
         instrument.jouer();
     }
 
